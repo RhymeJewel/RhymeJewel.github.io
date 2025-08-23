@@ -4,3 +4,13 @@ theme   = "PaperMod"
 [pagination]
 pagerSize = 10
 enableRobotsTXT = true
+[params.homeInfoParams]
+  Title = "Hi, I'm Yun 👋"
+  Content = "Notes on AI & toxicology, and more."
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10  
+
