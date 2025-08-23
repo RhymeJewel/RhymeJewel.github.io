@@ -1,0 +1,6 @@
+baseURL = "https://RhymeJewel.github.io/"
+title   = "My Blog"
+theme   = "PaperMod"
+[pagination]
+pagerSize = 10
+enableRobotsTXT = true
