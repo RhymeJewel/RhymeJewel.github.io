@@ -7,7 +7,7 @@ enableRobotsTXT = true
 [params.profileMode]
   enabled    = true
   title      = "Yun's Blog"
-  imageUrl   = "/images/avatar.jpg"   # put your image in static/images/avatar.jpg
+  imageUrl   = "/static/images/avatar.jpg"   # put your image in static/images/avatar.jpg
   imageTitle = "Yun Zhou"
   [[params.profileMode.buttons]]
     name = "Contact"
