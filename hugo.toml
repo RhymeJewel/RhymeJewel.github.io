@@ -31,9 +31,9 @@ pagerSize = 10
     url = "/publications/"
     weight = 10
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    identifier = "mosaic thinking"
+    name = "Mosaic Thinking"
+    url = "/mosaic thinking/"
     weight = 20
   [[menu.main]]
   identifier = "miscellaneous"
