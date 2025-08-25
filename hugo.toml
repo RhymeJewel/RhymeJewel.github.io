@@ -14,18 +14,19 @@ enableRobotsTXT = true
     url  = "/contact/"
 [params.homeInfoParams]
   Title = "Hi, I'm Yun 👋"
-  Content = “”“
+  Content = """
   Welcome to my webpage! I am Yun Zhou. 
   I received my PhD degree in Environmental & Occupational Health from Indiana University, Bloomington advised by Dr. Kan Shao. 
   My major is environmental health, with a primary focus on computational human risk assessment and Bayesian dose-response assessment. Additionally, I minored in informatics at the Luddy School of Informatics, Computing, and Engineering, concentrating on bioinformatics and machine learning.
   This blog is designed for notes on toxicology & AI, and more.
+  
   **Interests**
 - Computational Health Risk Assessment  
 - Computational Toxicology
 - Bayesian Dose-Response Modeling
 - Quantitative System Pharmacology (QSP)
 - Physiologically Based Pharmacokinetics (PBPK) modeling
-  ”“”
+  """
 [menu]
   [[menu.main]]
     identifier = "publications"
@@ -36,10 +37,10 @@ enableRobotsTXT = true
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 10
+    weight = 20
   [[menu.main]]
   identifier = "miscellaneous"
   name = "Miscellaneous"
   url = "/miscellaneous/"
-  weight = 10  
+  weight = 30  
 
