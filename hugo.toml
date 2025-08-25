@@ -6,18 +6,24 @@ enableRobotsTXT = true
 pagerSize = 10
 [params.profileMode]
   enabled    = true
-  subtitle   = "Computational toxicology & risk assessment"
   title      = "Yun's Blog"
+  subtitle   = "Computational toxicology & risk assessment"
   imageUrl   = "/static/images/avatar.jpg"   # put your image in static/images/avatar.jpg
   imageTitle = "Yun Zhou"
   [[params.profileMode.buttons]]
+    name = "About"
+    url  = "/about/"
+  [[params.profileMode.buttons]]
     name = "Contact"
     url  = "/contact/"
-  [[params.profileMode.buttons]]
-  name = "About"
-  url  = "/about/"
+
   
 [menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url  = "/about/"
+    weight = 5
   [[menu.main]]
     identifier = "publications"
     name = "Publications"
