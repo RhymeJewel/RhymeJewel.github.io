@@ -1,16 +1,45 @@
 baseURL = "https://RhymeJewel.github.io/"
-title   = "My Blog"
+title   = "Yun's Blog"
 theme   = "PaperMod"
 [pagination]
 pagerSize = 10
 enableRobotsTXT = true
+[params.profileMode]
+  enabled    = true
+  title      = "Yun's Blog"
+  imageUrl   = "/images/avatar.jpg"   # put your image in static/images/avatar.jpg
+  imageTitle = "Yun Zhou"
+  [[params.profileMode.buttons]]
+    name = "Contact"
+    url  = "/contact/"
 [params.homeInfoParams]
   Title = "Hi, I'm Yun 👋"
-  Content = "Notes on AI & toxicology, and more."
+  Content = “”“
+  Welcome to my webpage! I am Yun Zhou. 
+  I received my PhD degree in Environmental & Occupational Health from Indiana University, Bloomington advised by Dr. Kan Shao. 
+  My major is environmental health, with a primary focus on computational human risk assessment and Bayesian dose-response assessment. Additionally, I minored in informatics at the Luddy School of Informatics, Computing, and Engineering, concentrating on bioinformatics and machine learning.
+  This blog is designed for notes on toxicology & AI, and more.
+  **Interests**
+- Computational Health Risk Assessment  
+- Computational Toxicology
+- Bayesian Dose-Response Modeling
+- Quantitative System Pharmacology (QSP)
+- Physiologically Based Pharmacokinetics (PBPK) modeling
+  ”“”
 [menu]
+  [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 10
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 10  
+    weight = 10
+  [[menu.main]]
+  identifier = "miscellaneous"
+  name = "Miscellaneous"
+  url = "/miscellaneous/"
+  weight = 10  
 
