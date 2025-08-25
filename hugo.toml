@@ -1,10 +1,18 @@
 baseURL = "https://RhymeJewel.github.io/"
-title   = "Yun's Blog"
+title   = "RhymeJewel"
 theme   = "PaperMod"
 enableRobotsTXT = true
 [pagination]
 pagerSize = 10
-
+[params.profileMode]
+  enabled    = true
+  title      = "Yun's Blog"
+  imageUrl   = "/static/images/avatar.jpg"   # put your image in static/images/avatar.jpg
+  imageTitle = "Yun Zhou"
+  [[params.profileMode.buttons]]
+    name = "Contact"
+    url  = "/contact/"
+    
 [params.homeInfoParams]
   Title = "Hi, I'm Yun 👋"
   Content = """
@@ -20,6 +28,7 @@ pagerSize = 10
 - Quantitative System Pharmacology (QSP)
 - Physiologically Based Pharmacokinetics (PBPK) modeling
   """
+  
 [menu]
   [[menu.main]]
     identifier = "publications"
