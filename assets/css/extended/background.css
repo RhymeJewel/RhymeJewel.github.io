@@ -26,10 +26,9 @@ html {
 .profile,
 .home-info {
   /* size */
-  width: min(400px, 85%);   /* <= reduce width; responsive cap */
+  width: min(500px, 85%);   /* <= reduce width; responsive cap */
   margin: 2rem auto;        /* center and cut vertical space */
   padding: 0.3rem 0.45rem;    /* tighter padding */
-  /*min-height: unset !important;*/
 
   /* look */
   background: rgba(255,255,255,.55);
