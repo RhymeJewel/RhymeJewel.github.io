@@ -8,7 +8,7 @@ pagerSize = 10
   enabled    = true
   title      = "Yun's Blog"
   subtitle   = "Computational toxicology & risk assessment"
-  subTitle   = "Computational toxicology & risk assessment"
+  subTitle   = "Computational Toxicology & Risk Assessment"
   imageUrl   = "/images/avatar.jpg"   # put your image in static/images/avatar.jpg
   imageTitle = "Yun Zhou"
   [[params.profileMode.buttons]]

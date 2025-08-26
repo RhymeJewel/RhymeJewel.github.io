@@ -1,18 +1,21 @@
-/* show background only when the profile/home card exists */
-body:has(.profile), body:has(.home-info) {
-  background-image: url("/images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+/* Base */
+html, body { height: 100%; }
+body { margin: 0; }              /* remove default body margin globally */
+
+/* Home page only (Profile/HomeInfo present) */
+html:has(.profile), html:has(.home-info) {
+  background: url("/images/bg.jpg") center / cover no-repeat fixed;
 }
-/* Improve text readability on top of a photo */
+@media (max-width: 900px) {
+  html:has(.profile), html:has(.home-info) { background-attachment: scroll; }
+}
+
+/* Card overlay */
 .profile, .home-info {
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,.5);
   border-radius: 16px;
-  padding: 0.75rem 1rem;
+  padding: .5rem 0.75rem;
 }
 @media (prefers-color-scheme: dark) {
-  .profile, .home-info {
-    background: rgba(0,0,0,0.45);
-  }
+  .profile, .home-info { background: rgba(0,0,0,.45); }
 }
