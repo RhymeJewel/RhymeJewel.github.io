@@ -1,6 +1,6 @@
 /* Base */
 html, body { height: 100%; }
-body { margin: 0; background: transparent;}
+body { margin: 0; background: transparent !important;}
 
 /* Fallback for browsers without :has(): show bg everywhere */
 html {
@@ -29,6 +29,7 @@ html {
   width: min(400px, 80%);   /* <= reduce width; responsive cap */
   margin: 2rem auto;        /* center and cut vertical space */
   padding: 0.3rem 0.45rem;    /* tighter padding */
+  min-height: unset !important;
 
   /* look */
   background: rgba(255,255,255,.55);
