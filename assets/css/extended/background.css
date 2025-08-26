@@ -1,20 +1,38 @@
 /* Base */
 html, body { height: 100%; }
-body { margin: 0; }              /* remove default body margin globally */
+body { margin: 0; }
 
-/* Home page only (Profile/HomeInfo present) */
-html:has(.profile), html:has(.home-info) {
+/* Fallback for browsers without :has(): show bg everywhere */
+html {
   background: url("/images/bg.jpg") center / cover no-repeat fixed;
 }
-@media (max-width: 900px) {
-  html:has(.profile), html:has(.home-info) { background-attachment: scroll; }
+
+/* If :has is supported, scope the bg to the home page only */
+@supports selector(:has(*)) {
+  /* cancel the fallback */
+  html { background: none; }
+
+  html:has(.profile), html:has(.home-info) {
+    background: url("/images/bg.jpg") center / cover no-repeat fixed;
+  }
+
+  @media (max-width: 900px) {
+    html:has(.profile), html:has(.home-info) { background-attachment: scroll; }
+  }
 }
 
 /* Card overlay */
-.profile, .home-info {
-  background: rgba(255,255,255,.5);
-  border-radius: 16px;
-  padding: .5rem 0.75rem;
+/* Shrink the translucent card on the home page */
+.profile,
+.home-info {
+  /* size */
+  width: min(680px, 92%);   /* <= reduce width; responsive cap */
+  margin: 2rem auto;        /* center and cut vertical space */
+  padding: 1rem 1.25rem;    /* tighter padding */
+
+  /* look */
+  background: rgba(255,255,255,.55);
+  border-radius: 14px;
 }
 @media (prefers-color-scheme: dark) {
   .profile, .home-info { background: rgba(0,0,0,.45); }
