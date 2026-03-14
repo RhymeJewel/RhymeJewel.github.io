@@ -4,6 +4,10 @@ theme   = "PaperMod"
 enableRobotsTXT = true
 [pagination]
 pagerSize = 10
+
+[params]
+author = "Yun Zhou"
+
 [params.profileMode]
   enabled    = true
   title      = "Yun's Blog"
