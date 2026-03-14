@@ -33,7 +33,7 @@ pagerSize = 10
   [[menu.main]]
     identifier = "mosaic thinking"
     name = "Mosaic Thinking"
-    url = "/mosaic_thinking/"
+    url = "/mosaic-thinking/"
     weight = 20
   [[menu.main]]
   identifier = "miscellaneous"
