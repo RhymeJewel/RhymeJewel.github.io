@@ -22,7 +22,7 @@ pagerSize = 10
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "Aout"
     url  = "/about/"
     weight = 5
   [[menu.main]]
@@ -33,7 +33,7 @@ pagerSize = 10
   [[menu.main]]
     identifier = "mosaic thinking"
     name = "Mosaic Thinking"
-    url = "/mosaic thinking/"
+    url = "/mosaic_thinking/"
     weight = 20
   [[menu.main]]
   identifier = "miscellaneous"
